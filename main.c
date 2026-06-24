@@ -36,7 +36,7 @@ int current_scene = 0;
 float time_elapsed = 0.0f;
 int last_time = 0;
 
-float scene_durations[] = {8.0f, 15.0f, 15.0f, 20.0f, 20.0f, 25.0f, 25.0f, 25.0f, 20.0f, 20.0f};
+float scene_durations[] = {6.0f, 6.0f, 6.0f, 6.0f, 6.0f, 6.0f, 6.0f, 6.0f, 6.0f, 6.0f};
 
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
