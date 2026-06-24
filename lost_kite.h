@@ -1,3 +1,29 @@
+/*
+ * THE LOST KITE - Computer Graphics Assignment
+ * Header file with shared definitions and function declarations
+ * 
+ * MSYS2 MINGW64 COMPILATION:
+ * ==========================
+ * 
+ * Required Libraries (install via pacman in MSYS2 MINGW64):
+ *   - mingw-w64-x86_64-freeglut  (OpenGL context & window management)
+ *   - mingw-w64-x86_64-gcc        (compiler)
+ * 
+ * Compilation Command:
+ *   gcc -o the_lost_kite.exe main.c member1.c member2.c member3.c member4.c member5.c \
+ *     $(pkg-config --cflags --libs glut) -lm -std=c99
+ * 
+ * Key Libraries Linked:
+ *   - freeglut: Window creation, event handling, rendering setup
+ *   - opengl32: Core OpenGL rendering API (linked via freeglut)
+ *   - libm (-lm): C math library (sin, cos, etc.)
+ * 
+ * Output:
+ *   - 900x600 pixel window with OpenGL rendering
+ *   - 10 animated scenes showcasing Bresenham rasterization
+ *   - Real-time animation with 16ms frame timing
+ */
+
 #ifndef LOST_KITE_H
 #define LOST_KITE_H
 

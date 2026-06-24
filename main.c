@@ -1,3 +1,33 @@
+/*
+ * THE LOST KITE - Computer Graphics Assignment
+ * 
+ * BUILD INSTRUCTIONS FOR MSYS2 MINGW64 (Windows):
+ * ================================================
+ * 
+ * 1. Install required packages (in MSYS2 MINGW64 terminal):
+ *    pacman -Syu
+ *    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-make mingw-w64-x86_64-freeglut
+ * 
+ * 2. Compile with this command:
+ *    gcc -o the_lost_kite.exe main.c member1.c member2.c member3.c member4.c member5.c \
+ *      $(pkg-config --cflags --libs glut) -lm -std=c99
+ * 
+ * 3. Or use make (if Makefile exists):
+ *    make
+ * 
+ * 4. Run the application:
+ *    ./the_lost_kite.exe
+ * 
+ * CONTROLS:
+ * - ESC: Exit program
+ * - SPACE/ENTER: Advance to next scene or restart if at end
+ * 
+ * LIBRARIES USED:
+ * - FreeGLUT (OpenGL windowing/rendering)
+ * - OpenGL (graphics API)
+ * - libm (C math library for sin/cos)
+ */
+
 #include "lost_kite.h"
 
 int window_width = 900;
