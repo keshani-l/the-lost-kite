@@ -72,8 +72,12 @@ void timer(int val) {
     
     time_elapsed += dt;
     
-    if (current_scene < 10 && time_elapsed > scene_durations[current_scene]) {
-        advanceScene();
+    if (time_elapsed > scene_durations[current_scene]) {
+        if (current_scene < 9) {
+            advanceScene();
+        } else {
+            exit(0);
+        }
     }
     
     glutPostRedisplay();
